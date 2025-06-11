@@ -6,7 +6,7 @@
     "scripts": {
         "dev": "nodemon src/server.ts",
         "build": "pnpm tsc",
-        "start": "node dist/server.js",
+        "start": "node dist/index.js",
         "vercel-build": "pnpm build"
     },
     "keywords": [],

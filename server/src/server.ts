@@ -1,7 +1,7 @@
 import { FRONTEND_URL, PORT, STEAM_API_KEY } from "./lib/dotenv.config";
-import * as express from "express";
-import morgan = require("morgan");
-import cors = require("cors");
+import express from "express";
+import morgan from "morgan";
+import cors from "cors";
 import { Request, Response } from "express";
 
 const app = express();
@@ -79,7 +79,7 @@ app.post("/steam_data", async (req: Request, res: Response) => {
     }
 });
 
-app.post("/search/anime", async (req:Request, res: Response) => {
+app.post("/search/anime", async (req: Request, res: Response) => {
     try {
         const { query } = req.body;
 
